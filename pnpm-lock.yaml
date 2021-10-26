@@ -11,9 +11,21 @@ importers:
       '@angular/platform-browser': 12.1.0
       '@angular/platform-browser-dynamic': 12.1.0
       '@teambit/angular-v12': 0.0.39
+      '@types/datatables.net': 1.10.21
       '@types/jest': ~27.0.2
+      '@types/jquery': ^3.5.8
+      '@types/sizzle': 2.3.3
+      angular-datatables: 12.0.1
+      bootstrap: 4.6.0
+      datatables.net: 1.11.3
+      datatables.net-bs4: 1.11.3
+      datatables.net-buttons-bs4: 2.0.1
+      datatables.net-colreorder-bs4: 1.5.5
+      datatables.net-dt: 1.11.3
+      datatables.net-responsive-bs4: 2.2.9
       jest: ~27.0.6
       jest-preset-angular: ~10.0.1
+      jquery: 3.4.1
       rxjs: ^6.6.7
       tslib: ^2.3.1
       typescript: ~4.3.5
@@ -23,6 +35,18 @@ importers:
       '@angular/core': registry.npmjs.org/@angular/core/12.1.0_rxjs@6.6.7+zone.js@0.11.4
       '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/12.1.0_82519688281199bef51c6e31e9df92e3
       '@angular/platform-browser-dynamic': registry.npmjs.org/@angular/platform-browser-dynamic/12.1.0_7ecaf0a2884159c0157c1d4b991831f3
+      '@types/datatables.net': registry.npmjs.org/@types/datatables.net/1.10.21
+      '@types/jquery': registry.npmjs.org/@types/jquery/3.5.8
+      '@types/sizzle': registry.npmjs.org/@types/sizzle/2.3.3
+      angular-datatables: registry.npmjs.org/angular-datatables/12.0.1
+      bootstrap: registry.npmjs.org/bootstrap/4.6.0_jquery@3.4.1
+      datatables.net: registry.npmjs.org/datatables.net/1.11.3
+      datatables.net-bs4: registry.npmjs.org/datatables.net-bs4/1.11.3
+      datatables.net-buttons-bs4: registry.npmjs.org/datatables.net-buttons-bs4/2.0.1
+      datatables.net-colreorder-bs4: registry.npmjs.org/datatables.net-colreorder-bs4/1.5.5
+      datatables.net-dt: registry.npmjs.org/datatables.net-dt/1.11.3
+      datatables.net-responsive-bs4: registry.npmjs.org/datatables.net-responsive-bs4/2.2.9
+      jquery: registry.npmjs.org/jquery/3.4.1
       rxjs: registry.npmjs.org/rxjs/6.6.7
       tslib: registry.npmjs.org/tslib/2.3.1
       typescript: registry.npmjs.org/typescript/4.3.5
@@ -3300,6 +3324,14 @@ packages:
       '@types/node': registry.npmjs.org/@types/node/16.11.6
     dev: true
 
+  registry.npmjs.org/@types/datatables.net/1.10.21:
+    resolution: {integrity: sha512-fXtWlm70PUEv0k5NfpI+BmHTTHxU6XMkKF0B2G3ly2g64EUYJc2SuNI9hZ7l/+aComO0IpLv0eLAOHGEfzMFiQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/datatables.net/-/datatables.net-1.10.21.tgz}
+    name: '@types/datatables.net'
+    version: 1.10.21
+    dependencies:
+      '@types/jquery': registry.npmjs.org/@types/jquery/3.5.8
+    dev: false
+
   registry.npmjs.org/@types/enhanced-resolve/3.0.7:
     resolution: {integrity: sha512-H23Fzk0BCz4LoKq1ricnLSRQuzoXTv57bGUwC+Cn84kKPaoHIS7bhFhfy4DzMeSBxoXc6jFziYoqpCab1U511w==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/enhanced-resolve/-/enhanced-resolve-3.0.7.tgz}
     name: '@types/enhanced-resolve'
@@ -3442,6 +3474,14 @@ packages:
       pretty-format: registry.npmjs.org/pretty-format/27.3.1
     dev: true
 
+  registry.npmjs.org/@types/jquery/3.5.8:
+    resolution: {integrity: sha512-cXk6NwqjDYg+UI9p2l3x0YmPa4m7RrXqmbK4IpVVpRJiYXU/QTo+UZrn54qfE1+9Gao4qpYqUnxm5ZCy2FTXAw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/jquery/-/jquery-3.5.8.tgz}
+    name: '@types/jquery'
+    version: 3.5.8
+    dependencies:
+      '@types/sizzle': registry.npmjs.org/@types/sizzle/2.3.3
+    dev: false
+
   registry.npmjs.org/@types/json-schema/7.0.9:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz}
     name: '@types/json-schema'
@@ -3563,6 +3603,12 @@ packages:
       '@types/mime': registry.npmjs.org/@types/mime/1.3.2
       '@types/node': registry.npmjs.org/@types/node/16.11.6
     dev: true
+
+  registry.npmjs.org/@types/sizzle/2.3.3:
+    resolution: {integrity: sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.3.tgz}
+    name: '@types/sizzle'
+    version: 2.3.3
+    dev: false
 
   registry.npmjs.org/@types/source-list-map/0.1.2:
     resolution: {integrity: sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/source-list-map/-/source-list-map-0.1.2.tgz}
@@ -4572,6 +4618,13 @@ packages:
     version: 1.0.2
     dev: true
 
+  registry.npmjs.org/angular-datatables/12.0.1:
+    resolution: {integrity: sha512-EiH7e1zo1L5vZnOAdyOij8jDMjepSNaxpk0RT0Zo/xZrdb3DbkRd2A+7aY106XAoZidGNvE5Ww/ASQuNmTWIyg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/angular-datatables/-/angular-datatables-12.0.1.tgz}
+    name: angular-datatables
+    version: 12.0.1
+    engines: {node: '>=8.9.0'}
+    dev: false
+
   registry.npmjs.org/ansi-colors/3.2.4:
     resolution: {integrity: sha512-hHUXGagefjN2iRrID63xckIvotOXOojhQKWIPUZ4mNUZ9nLZW+7FMNoE1lOkEhNWYsx/7ysGIuJYCiMAA9FnrA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/ansi-colors/-/ansi-colors-3.2.4.tgz}
     name: ansi-colors
@@ -5356,6 +5409,18 @@ packages:
     name: boolbase
     version: 1.0.0
     dev: true
+
+  registry.npmjs.org/bootstrap/4.6.0_jquery@3.4.1:
+    resolution: {integrity: sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/bootstrap/-/bootstrap-4.6.0.tgz}
+    id: registry.npmjs.org/bootstrap/4.6.0
+    name: bootstrap
+    version: 4.6.0
+    peerDependencies:
+      jquery: 1.9.1 - 3
+      popper.js: ^1.16.1
+    dependencies:
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
 
   registry.npmjs.org/brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz}
@@ -6930,6 +6995,89 @@ packages:
       whatwg-mimetype: registry.npmjs.org/whatwg-mimetype/2.3.0
       whatwg-url: registry.npmjs.org/whatwg-url/8.7.0
     dev: true
+
+  registry.npmjs.org/datatables.net-bs4/1.11.3:
+    resolution: {integrity: sha512-UPT2F1nvZZzKJSSHb+3+bTeQy1ULLMT1BexBHCkh5PhMnAZNPbTEZD+6To1RCBfUF1rtPwIJTwJ+Jjjxy86xRw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net-bs4/-/datatables.net-bs4-1.11.3.tgz}
+    name: datatables.net-bs4
+    version: 1.11.3
+    dependencies:
+      datatables.net: registry.npmjs.org/datatables.net/1.11.3
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
+
+  registry.npmjs.org/datatables.net-buttons-bs4/2.0.1:
+    resolution: {integrity: sha512-wmW0NyvwzX5nFk8DnhZojaSH5Yjrn2fFNY6arubuifcBI8yYqPjIjkV3ImTYNRyIstg1BJAbKFesLzeTHm1F6A==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net-buttons-bs4/-/datatables.net-buttons-bs4-2.0.1.tgz}
+    name: datatables.net-buttons-bs4
+    version: 2.0.1
+    dependencies:
+      datatables.net-bs4: registry.npmjs.org/datatables.net-bs4/1.11.3
+      datatables.net-buttons: registry.npmjs.org/datatables.net-buttons/2.0.1
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
+
+  registry.npmjs.org/datatables.net-buttons/2.0.1:
+    resolution: {integrity: sha512-Vl64BZmBWCpenE2OB+DMnsl4FX/timC9KHvjxyLoCedfIWJcuwQxJ9netMXgsd9dfl7XLQfYn4S1ObgvrrZzsw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net-buttons/-/datatables.net-buttons-2.0.1.tgz}
+    name: datatables.net-buttons
+    version: 2.0.1
+    dependencies:
+      datatables.net: registry.npmjs.org/datatables.net/1.11.3
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
+
+  registry.npmjs.org/datatables.net-colreorder-bs4/1.5.5:
+    resolution: {integrity: sha512-MGAJ/k/FeSK2Kccio5k0oBRacBpmaIKP2wXYfC64ONZFjOFxKBSmFevfg7yPdipYdYDwoQqDnmw0MpdIL7UUug==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net-colreorder-bs4/-/datatables.net-colreorder-bs4-1.5.5.tgz}
+    name: datatables.net-colreorder-bs4
+    version: 1.5.5
+    dependencies:
+      datatables.net-bs4: registry.npmjs.org/datatables.net-bs4/1.11.3
+      datatables.net-colreorder: registry.npmjs.org/datatables.net-colreorder/1.5.5
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
+
+  registry.npmjs.org/datatables.net-colreorder/1.5.5:
+    resolution: {integrity: sha512-AUwv5A/87I4hg7GY/WbhRrDhqng9b019jLvvKutHibSPCEtMDWqyNtuP0q8zYoquqU9UQ1/nqXLW/ld8TzIDYQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net-colreorder/-/datatables.net-colreorder-1.5.5.tgz}
+    name: datatables.net-colreorder
+    version: 1.5.5
+    dependencies:
+      datatables.net: registry.npmjs.org/datatables.net/1.11.3
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
+
+  registry.npmjs.org/datatables.net-dt/1.11.3:
+    resolution: {integrity: sha512-EX/thRwXpQRj8hZSb+ZMDNQ4uW1zLZa9BoAhhw1b5HIDH1nJ9WRTkERsoxE+3WISeX8bDiaEydf8TTQBSqxXVw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net-dt/-/datatables.net-dt-1.11.3.tgz}
+    name: datatables.net-dt
+    version: 1.11.3
+    dependencies:
+      datatables.net: registry.npmjs.org/datatables.net/1.11.3
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
+
+  registry.npmjs.org/datatables.net-responsive-bs4/2.2.9:
+    resolution: {integrity: sha512-f6MS0aL7XqjYcFSjup/JRDezbK3cCYFjAB+4vl8dwnGqRP13xwTjXiNqlrRT+fhJJzTQhaHveRpvFUn1qsyn7g==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net-responsive-bs4/-/datatables.net-responsive-bs4-2.2.9.tgz}
+    name: datatables.net-responsive-bs4
+    version: 2.2.9
+    dependencies:
+      datatables.net-bs4: registry.npmjs.org/datatables.net-bs4/1.11.3
+      datatables.net-responsive: registry.npmjs.org/datatables.net-responsive/2.2.9
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
+
+  registry.npmjs.org/datatables.net-responsive/2.2.9:
+    resolution: {integrity: sha512-C+mOY/mG17zzaYPtgqAOsC4JlGddGkKmO/ADNEtNZ41bcPV1/3jJzkOWT3DCZ400NmkXLDz4WObWlPT8WCgfzg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net-responsive/-/datatables.net-responsive-2.2.9.tgz}
+    name: datatables.net-responsive
+    version: 2.2.9
+    dependencies:
+      datatables.net: registry.npmjs.org/datatables.net/1.11.3
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
+
+  registry.npmjs.org/datatables.net/1.11.3:
+    resolution: {integrity: sha512-VMj5qEaTebpNurySkM6jy6sGpl+s6onPK8xJhYr296R/vUBnz1+id16NVqNf9z5aR076OGcpGHCuiTuy4E05oQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/datatables.net/-/datatables.net-1.11.3.tgz}
+    name: datatables.net
+    version: 1.11.3
+    dependencies:
+      jquery: registry.npmjs.org/jquery/3.4.1
+    dev: false
 
   registry.npmjs.org/dateformat/3.0.3:
     resolution: {integrity: sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/dateformat/-/dateformat-3.0.3.tgz}
@@ -11236,6 +11384,12 @@ packages:
     version: 2.2.5
     engines: {node: '>=6'}
     dev: true
+
+  registry.npmjs.org/jquery/3.4.1:
+    resolution: {integrity: sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/jquery/-/jquery-3.4.1.tgz}
+    name: jquery
+    version: 3.4.1
+    dev: false
 
   registry.npmjs.org/js-tokens/3.0.2:
     resolution: {integrity: sha1-mGbfOVECEw449/mWvOtlRDIJwls=, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/js-tokens/-/js-tokens-3.0.2.tgz}
