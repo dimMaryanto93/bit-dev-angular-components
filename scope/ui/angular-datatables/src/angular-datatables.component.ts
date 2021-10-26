@@ -1,7 +1,8 @@
 import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {DataTableDirective} from 'angular-datatables';
 import {Subject} from 'rxjs';
-import 'jquery/dist/jquery';
+
+import $ from 'jquery';
 import 'datatables.net/js/jquery.dataTables';
 import 'datatables.net-bs4/js/dataTables.bootstrap4';
 import 'datatables.net-buttons/js/dataTables.buttons';
@@ -31,7 +32,11 @@ export class AngularDatatablesComponent implements OnInit, AfterViewInit, OnDest
 
   // dtOptions: DataTables.Settings = {};
 
-  constructor() {}
+  constructor() {
+    $(document).ready(function(){
+      console.log('jquery works!');
+    });
+  }
 
   ngOnDestroy(): void {
     this.dtTrigger.unsubscribe();
