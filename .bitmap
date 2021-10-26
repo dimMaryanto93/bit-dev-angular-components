@@ -10,8 +10,8 @@
 
 {
     "ui/angular-datatables": {
-        "scope": "",
-        "version": "",
+        "scope": "tabeldata.angular-ui-datatables",
+        "version": "0.0.1",
         "mainFile": "public-api.ts",
         "rootDir": "scope/ui/angular-datatables"
     },

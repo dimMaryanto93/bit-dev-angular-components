@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "company.scope"
+    "defaultScope": "tabeldata.angular-ui-datatables"
   },
   /**
    * main configuration for component dependency resolution.
