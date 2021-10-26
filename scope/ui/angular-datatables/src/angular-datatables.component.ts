@@ -1,38 +1,41 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {DataTableDirective} from 'angular-datatables';
 import {Subject} from 'rxjs';
-import $ from 'jquery';
+import 'jquery/dist/jquery';
+import 'datatables.net/js/jquery.dataTables';
+import 'datatables.net-bs4/js/dataTables.bootstrap4';
+import 'datatables.net-buttons/js/dataTables.buttons';
+import 'datatables.net-buttons/js/buttons.colVis';
+import 'datatables.net-buttons/js/buttons.flash';
+import 'datatables.net-buttons/js/buttons.html5';
+import 'datatables.net-buttons/js/buttons.print';
+import 'datatables.net-buttons-bs4/js/buttons.bootstrap4';
+import 'datatables.net-colreorder/js/dataTables.colReorder';
+import 'datatables.net-colreorder-bs4/js/colReorder.bootstrap4';
+import 'datatables.net-select/js/dataTables.select';
+import 'datatables.net-select-bs4/js/select.bootstrap4';
+import 'jszip/dist/jszip';
+
 
 @Component({
   selector: 'angular-datatables',
-  template: `
-  <table datatable class="row-border hover table table-striped">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>First name</th>
-      <th>Last name</th>
-    </tr>
-  </thead>
-  <tbody>    
-    <tr>
-      <td>11</td>
-      <td>Louis</td>
-      <td>Lin</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>Zelda</td>
-      <td>Link</td>
-    </tr>
-  </tbody>
-</table>
-`,
+  templateUrl: './angular-datatables.component.html',
   styleUrls: ['./angular-datatables.component.scss']
 })
-export class AngularDatatablesComponent implements OnInit, AfterViewInit {
+export class AngularDatatablesComponent implements OnInit, AfterViewInit, OnDestroy {
   
+  // @ViewChild(DataTableDirective, {static: false})
+  // private datatableElement: DataTableDirective;
+
+  dtTrigger: Subject<any> = new Subject<any>();
+
+  // dtOptions: DataTables.Settings = {};
+
   constructor() {}
+
+  ngOnDestroy(): void {
+    this.dtTrigger.unsubscribe();
+  }
 
   ngAfterViewInit(): void {
     this.dtTrigger.next();
@@ -40,7 +43,5 @@ export class AngularDatatablesComponent implements OnInit, AfterViewInit {
   
   ngOnInit(): void {
   }
-
-  dtTrigger: Subject<any> = new Subject();
 
 }
