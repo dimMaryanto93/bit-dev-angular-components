@@ -2,7 +2,7 @@ import {AfterViewInit, Component, OnDestroy, OnInit, ViewChild} from '@angular/c
 import {DataTableDirective} from 'angular-datatables';
 import {Subject} from 'rxjs';
 
-import $ from 'jquery';
+import * as $ from 'jquery';
 import 'datatables.net/js/jquery.dataTables';
 import 'datatables.net-bs4/js/dataTables.bootstrap4';
 import 'datatables.net-buttons/js/dataTables.buttons';

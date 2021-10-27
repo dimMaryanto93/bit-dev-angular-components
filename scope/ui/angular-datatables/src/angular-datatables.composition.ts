@@ -3,7 +3,7 @@ import { AngularDatatablesModule } from './angular-datatables.module';
 
 @Component({
   selector: 'angular-datatables-composition-cmp',
-  template: `AngularDatatables composition: <angular-datatables></angular-datatables>`
+  template: `<angular-datatables></angular-datatables>`
 })
 class AngularDatatablesCompositionComponent {}
 
